@@ -90,7 +90,11 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
  
  
  
- 
+                    
+                    if($event['message']['text']=='atl'){
+                        $imageMessageBuilder = new ImageMessageBuilder('https://attilanopal.github.io/assets/img/placeholder-big.jpg','https://attilanopal.github.io/assets/img/placeholder-big.jpg');
+                        $result=$bot->replyMessage($event['replyToken'],$imageMessageBuilder);
+                    }
                     $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
                     return $response
                         ->withHeader('Content-Type', 'application/json')
