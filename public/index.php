@@ -91,10 +91,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
  
  
                     
-                    if($event['message']['text']=='atl'){
-                        $imageMessageBuilder = new ImageMessageBuilder('https://attilanopal.github.io/assets/img/placeholder-big.jpg','https://attilanopal.github.io/assets/img/placeholder-big.jpg');
-                        $result=$bot->replyMessage($event['replyToken'],$imageMessageBuilder);
-                    }
                     $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
                     return $response
                         ->withHeader('Content-Type', 'application/json')
@@ -105,5 +101,16 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
         return $response->withStatus(200, 'for Webhook!'); //buat ngasih response 200 ke pas verify webhook
     }
     return $response->withStatus(400, 'No event sent!');
+});
+$app->get('/pushmessage', function ($req, $response) use ($bot) {
+    // send push message to user
+    $userId = 'Ue92a5b9df7e195607bddab3f3fa8f336';
+    $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
+    $result = $bot->pushMessage($userId, $textMessageBuilder);
+ 
+    $response->getBody()->write("Pesan push berhasil dikirim!");
+    return $response
+        ->withHeader('Content-Type', 'application/json')
+        ->withStatus($result->getHTTPStatus());
 });
 $app->run();
