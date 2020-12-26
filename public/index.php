@@ -91,12 +91,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                         $getprofile = $bot->getProfile($userId);
                         $profile = $getprofile->getJSONDecodedBody();
                         $fotProf = new ImageMessageBuilder($profile['pictureUrl'],$profile['pictureUrl']);
-                    
                         $result = $bot->replyMessage($event['replyToken'], $fotProf);
-                        $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
-                        return $response
-                            ->withHeader('Content-Type', 'application/json')
-                            ->withStatus($result->getHTTPStatus());
                         }
                     else if(strtolower($event['message']['text']) == '!myuserid'){
                     // or we can use replyMessage() instead to send reply message
@@ -106,10 +101,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $multiMessageBuilder->add($textMessageBuilder);
                     $multiMessageBuilder->add($textMessageUserId);
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
-                    $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
-                    return $response
-                        ->withHeader('Content-Type', 'application/json')
-                        ->withStatus($result->getHTTPStatus());
                     }else if(strtolower($event['message']['text'])=='!flex'){
                         $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
@@ -122,7 +113,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                                 ]
                             ],
                         ]);
-
                     }
                 }//Content api
                 elseif (
@@ -135,11 +125,11 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $contentType = ucfirst($event['message']['type']);
                     $result = $bot->replyText($event['replyToken'],
                         $contentType . " yang Anda kirim bisa diakses dari link:\n " . $contentURL);
-                    $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
+                } 
+                $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
                     return $response
                         ->withHeader('Content-Type', 'application/json')
                         ->withStatus($result->getHTTPStatus());
-                } 
             }
         }
         return $response->withStatus(200, 'for Webhook!'); //buat ngasih response 200 ke pas verify webhook
