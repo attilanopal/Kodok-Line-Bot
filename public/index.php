@@ -141,6 +141,17 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
         ->withHeader('Content-Type', 'application/json')
         ->withStatus($result->getHTTPStatus());
 });
+$app->get('/pushmessage/tilah', function ($req, $response) use ($bot) {
+    // send push message to user
+    $userId = 'Udcbc496f3391cdd5f5ab5c5e365e7e2d';
+    $textMessageBuilder = new TextMessageBuilder('Hai Azam, Valo Kuy?');
+    $result = $bot->pushMessage($userId, $textMessageBuilder);
+ 
+    $response->getBody()->write("Pesan push nya sudah saya kirim !");
+    return $response
+        ->withHeader('Content-Type', 'application/json')
+        ->withStatus($result->getHTTPStatus());
+});
 $app->get('/multicast', function($req, $response) use ($bot)
 {
     // list of users
