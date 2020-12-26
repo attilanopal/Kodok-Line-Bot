@@ -90,7 +90,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     }
                     
  
-                    if($event['message']['text'] == '!myUserId'){
+                    if(strtolower($event['message']['text']) == '!myUserId'){
                     // or we can use replyMessage() instead to send reply message
                     
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
@@ -130,11 +130,7 @@ $app->get('/multicast', function($req, $response) use ($bot)
 {
     // list of users
     $userList = [
-        'Ue92a5b9df7e195607bddab3f3fa8f336',
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'];
+        'Ue92a5b9df7e195607bddab3f3fa8f336'];//bisa ditambahkan 'abc','cda'] gitu
  
     // send multicast message to user
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan multicast');
