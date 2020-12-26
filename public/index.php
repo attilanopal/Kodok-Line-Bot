@@ -77,9 +77,30 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
     $prefix='!';
     if(is_array($data['events'])){
         foreach ($data['events'] as $event)
-        {
+        {   
             if ($event['type'] == 'message')
-            {
+            {   
+                if(
+                    $event['source']['type'] == 'group' or
+                    $event['source']['type'] == 'room'
+                  ){
+                   //message from group / room
+                   if ($event['source']['userId']) {
+ 
+                    $userId = $event['source']['userId'];
+                    $getprofile = $bot->getProfile($userId);
+                    $profile = $getprofile->getJSONDecodedBody();
+                    $greetings = new TextMessageBuilder("Halo, " . $profile['displayName']);
+             
+                    $result = $bot->replyMessage($event['replyToken'], $greetings);
+                    $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
+                    return $response
+                        ->withHeader('Content-Type', 'application/json')
+                        ->withStatus($result->getHTTPStatus());
+                }              
+                  } else {
+                   //message from single user
+                
                 if($event['message']['type'] == 'text')
                 {
                     // send same message as reply to user
@@ -88,6 +109,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     if($event['message']['text']=='!autoReply'){
                         $autoReplyStatusMessage = new TextMessageBuilder('Auto Reply : '.$autoReplyStatus);
                     }
+
                     
  
                     if($event['message']['text'] == '!myUserId'){
@@ -124,6 +146,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                         ->withHeader('Content-Type', 'application/json')
                         ->withStatus($result->getHTTPStatus());
                 } 
+            }
             }
         }
         return $response->withStatus(200, 'for Webhook!'); //buat ngasih response 200 ke pas verify webhook
