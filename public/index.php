@@ -115,7 +115,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $event['message']['type'] == 'audio' or
                     $event['message']['type'] == 'file'
                 ) {
-                    $contentURL = " https://example.herokuapp.com/public/content/" . $event['message']['id'];
+                    $contentURL = " https://kodook.herokuapp.com/public/content/" . $event['message']['id'];
                     $contentType = ucfirst($event['message']['type']);
                     $result = $bot->replyText($event['replyToken'],
                         $contentType . " yang Anda kirim bisa diakses dari link:\n " . $contentURL);
@@ -164,6 +164,16 @@ $app->get('/profile/{userId}', function ($req, $response, $args) use ($bot) {
     $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
     return $response
         ->withHeader('Content-Type', 'application/json')
+        ->withStatus($result->getHTTPStatus());
+});
+$app->get('/content/{messageId}', function ($req, $response, $args) use ($bot) {
+    // get message content
+    $messageId = $args['messageId'];
+    $result = $bot->getMessageContent($messageId);
+    // set response
+    $response->getBody()->write($result->getRawBody());
+    return $response
+        ->withHeader('Content-Type', $result->getHeader('Content-Type'))
         ->withStatus($result->getHTTPStatus());
 });
 $app->run();
