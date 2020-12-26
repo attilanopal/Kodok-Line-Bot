@@ -90,7 +90,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     }
                     
  
-                    if(strtolower($event['message']['text']) == '!myUserId'){
+                    if($event['message']['text'] == '!myUserId'){
                     // or we can use replyMessage() instead to send reply message
                     
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
