@@ -156,7 +156,7 @@ $app->get('/multicast', function($req, $response) use ($bot)
 {
     // list of users
     $userList = [
-        'Ue92a5b9df7e195607bddab3f3fa8f336'];//bisa ditambahkan 'abc','cda'] gitu
+        'Ue92a5b9df7e195607bddab3f3fa8f336','Udcbc496f3391cdd5f5ab5c5e365e7e2d'];//bisa ditambahkan 'abc','cda'] gitu
  
     // send multicast message to user
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan multicast');
