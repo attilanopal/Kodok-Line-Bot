@@ -84,13 +84,13 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     // send same message as reply to user
                     // $result = $bot->replyText($event['replyToken'],'ini user Id kamu : '.$event['source']['userId']);
                     $multiMessageBuilder = new MultiMessageBuilder();
-                    if($event['message']['text']==$prefix.'autoReply'){
+                    if($event['message']['text']=='!autoReply'){
                         $autoReplyStatusMessage = new TextMessageBuilder('Auto Reply : '.$autoReplyStatus);
 
                     }
  
  
-                    if($event['message']['text'] == $prefix.'myUserId'){
+                    if($event['message']['text'] == '!myUserId'){
                     // or we can use replyMessage() instead to send reply message
                     
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
