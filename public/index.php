@@ -98,7 +98,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                             ->withHeader('Content-Type', 'application/json')
                             ->withStatus($result->getHTTPStatus());
                         }
-                    if($event['message']['text'] == '!myUserId'){
+                    else if(strtolower($event['message']['text']) == '!myuserid'){
                     // or we can use replyMessage() instead to send reply message
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
                     $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
@@ -110,6 +110,19 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     return $response
                         ->withHeader('Content-Type', 'application/json')
                         ->withStatus($result->getHTTPStatus());
+                    }else if(strtolower($event['message']['text'])=='!flex'){
+                        $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
+                        $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
+                            'replyToken' => $event['replyToken'],
+                            'messages'   => [
+                                [
+                                    'type'     => 'flex',
+                                    'altText'  => 'Test Flex Message',
+                                    'contents' => json_decode($flexTemplate)
+                                ]
+                            ],
+                        ]);
+
                     }
                 }//Content api
                 elseif (
@@ -190,5 +203,4 @@ $app->get('/content/{messageId}', function ($req, $response, $args) use ($bot) {
         ->withHeader('Content-Type', $result->getHeader('Content-Type'))
         ->withStatus($result->getHTTPStatus());
 });
-
 $app->run();
