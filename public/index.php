@@ -83,17 +83,14 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     
  
  
-                    if($event['message']['text'] == '-myId'){
+                    if($event['message']['text'] == '!myUserId'){
                     // or we can use replyMessage() instead to send reply message
                     $multiMessageBuilder = new MultiMessageBuilder();
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
                     $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
                     $textMessageUserId = new TextMessageBuilder($event['source']['userId']);
-                    $textMessageBuilder1 = new TextMessageBuilder('Kirim ke line ku yaaa (id : annaufal12)');
                     $multiMessageBuilder->add($textMessageBuilder);
                     $multiMessageBuilder->add($textMessageUserId);
-                    $multiMessageBuilder->add($textMessageBuilder1);
-                    $multiMessageBuilder->add($stickerMessageBuilder); 
                     }
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
  
