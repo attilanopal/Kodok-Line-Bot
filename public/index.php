@@ -19,7 +19,10 @@ use \LINE\LINEBot\SignatureValidator as SignatureValidator;
  
  
 $pass_signature = true;
- 
+
+// Variabel buatan Atl Ngokhey
+$autoReplyStatus = '0ff';
+$prefix='!';
  
 // set LINE channel_access_token and channel_secret
 $channel_access_token = "B9h0QfSxK3g6cDGBE9YnTKPqF3N31qP2f+crDf5Qi4UzUnoQzkUYP4qArMseGRxSkv/tep7B78zqLeitmUz3KvsSJNQMRa3QjLUsaBmjqAv9bf0nSd39KWrDAEqOxEiqr5n/mwOu6x2fF5jAYk+RqAdB04t89/1O/w1cDnyilFU=";
@@ -80,12 +83,16 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                 {
                     // send same message as reply to user
                     // $result = $bot->replyText($event['replyToken'],'ini user Id kamu : '.$event['source']['userId']);
-                    
- 
- 
-                    if($event['message']['text'] == '!myUserId'){
-                    // or we can use replyMessage() instead to send reply message
                     $multiMessageBuilder = new MultiMessageBuilder();
+                    if($event['message']['text']==$prefix.'autoReply'){
+                        $autoReplyStatusMessage = new TextMessageBuilder('Auto Reply : '.$autoReplyStatus);
+
+                    }
+ 
+ 
+                    if($event['message']['text'] == $prefix.'myUserId'){
+                    // or we can use replyMessage() instead to send reply message
+                    
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
                     $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
                     $textMessageUserId = new TextMessageBuilder($event['source']['userId']);
