@@ -70,10 +70,11 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
         }
     }
     // Variabel buatan Atl Ngokhey
-    $autoReplyStatus = 'Off';
-    $prefix='!';
+    
  
     $data = json_decode($body, true);
+    $autoReplyStatus = 'Off';
+    $prefix='!';
     if(is_array($data['events'])){
         foreach ($data['events'] as $event)
         {
@@ -86,9 +87,8 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $multiMessageBuilder = new MultiMessageBuilder();
                     if($event['message']['text']=='!autoReply'){
                         $autoReplyStatusMessage = new TextMessageBuilder('Auto Reply : '.$autoReplyStatus);
-
                     }
- 
+                    
  
                     if($event['message']['text'] == '!myUserId'){
                     // or we can use replyMessage() instead to send reply message
@@ -100,7 +100,9 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $multiMessageBuilder->add($textMessageUserId);
                     }
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
- 
+                    if($event['message']['text']='!myProfile'){
+                        $result=$bot->getProfile($event['source']['userId']);
+                    }
  
  
                     
@@ -115,15 +117,35 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
     }
     return $response->withStatus(400, 'No event sent!');
 });
-// $app->get('/pushmessage', function ($req, $response) use ($bot) {
-//     // send push message to user
-//     $userId = 'Ue92a5b9df7e195607bddab3f3fa8f336';
-//     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
-//     $result = $bot->pushMessage($userId, $textMessageBuilder);
+$app->get('/pushmessage', function ($req, $response) use ($bot) {
+    // send push message to user
+    $userId = 'Ue92a5b9df7e195607bddab3f3fa8f336';
+    $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push dari kodok');
+    $result = $bot->pushMessage($userId, $textMessageBuilder);
  
-//     $response->getBody()->write("Pesan push berhasil dikirim!");
-//     return $response
-//         ->withHeader('Content-Type', 'application/json')
-//         ->withStatus($result->getHTTPStatus());
-// });
+    $response->getBody()->write("Pesan push nya sudah saya kirim !");
+    return $response
+        ->withHeader('Content-Type', 'application/json')
+        ->withStatus($result->getHTTPStatus());
+});
+$app->get('/multicast', function($req, $response) use ($bot)
+{
+    // list of users
+    $userList = [
+        'Ue92a5b9df7e195607bddab3f3fa8f336',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'];
+ 
+    // send multicast message to user
+    $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan multicast');
+    $result = $bot->multicast($userList, $textMessageBuilder);
+ 
+ 
+    $response->getBody()->write("Pesan multicast nya sudah saya kirim mas");
+    return $response
+        ->withHeader('Content-Type', 'application/json')
+        ->withStatus($result->getHTTPStatus());
+});
 $app->run();
