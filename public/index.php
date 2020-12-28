@@ -95,7 +95,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
 
                     }else if(strtolower($event['message']['text'])=='!flex'){
-                        $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
+                        $flexTemplate = file_get_contents("../flex_main.json"); // template flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                             'replyToken' => $event['replyToken'],
                             'messages'   => [
