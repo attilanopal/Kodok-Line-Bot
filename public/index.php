@@ -69,10 +69,12 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
             return $response->withStatus(400, 'Invalid signature');
         }
     }
-
+    // Variabel buatan Atl Ngokhey
     
  
     $data = json_decode($body, true);
+    $autoReplyStatus = 'Off';
+    $prefix='!';
     if(is_array($data['events'])){
         foreach ($data['events'] as $event)
         {   
@@ -82,13 +84,15 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                 {
                     // send same message as reply to user
                     // $result = $bot->replyText($event['replyToken'],'ini user Id kamu : '.$event['source']['userId']);
-                   if(strtolower($event['message']['text'])=='!tes'){
-                       $pesanTes = new TextMessageBuilder('Masuk');
-                       $result = bot->replyMessage($event['replyToken'],$pesanTes);
-                   }else if ($event['message']['text']=='!apaiya'){
-                        $pesanTes = new TextMessageBuilder('Masuk');
-                        $result = bot->replyMessage($event['replyToken'],$pesanTes);
-                   }
+                    $multiMessageBuilder = new MultiMessageBuilder();
+                    if (strtolower($event['message']['text'])=='!mypp') {
+
+                        $userId = $event['source']['userId'];
+                        $getprofile = $bot->getProfile($userId);
+                        $profile = $getprofile->getJSONDecodedBody();
+                        $fotProf = new ImageMessageBuilder($profile['pictureUrl'],$profile['pictureUrl']);
+                        $result = $bot->replyMessage($event['replyToken'], $fotProf);
+                        }
                     else if(strtolower($event['message']['text']) == '!myuserid'){
                     // or we can use replyMessage() instead to send reply message
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
@@ -97,7 +101,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $multiMessageBuilder->add($textMessageBuilder);
                     $multiMessageBuilder->add($textMessageUserId);
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
-
                     }else if(strtolower($event['message']['text'])=='!flex'){
                         $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
@@ -111,10 +114,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                             ],
                         ]);
                     }
-                    $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
-                    return $response
-                        ->withHeader('Content-Type', 'application/json')
-                        ->withStatus($result->getHTTPStatus());
                 }//Content api
                 elseif (
                     $event['message']['type'] == 'image' or
