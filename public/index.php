@@ -85,7 +85,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                    if(strtolower($event['message']['text'])=='!tes'){
                        $pesanTes = new TextMessageBuilder('Masuk');
                        $result = bot->replyMessage($event['replyToken'],$pesanTes);
-                   }else if (strtolower($event['message']['text'])=='!tes2'){
+                   }else if ($event['message']['text']=='!apaiya'){
                         $pesanTes = new TextMessageBuilder('Masuk');
                         $result = bot->replyMessage($event['replyToken'],$pesanTes);
                    }
