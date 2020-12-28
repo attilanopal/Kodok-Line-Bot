@@ -169,7 +169,7 @@
             "action": {
               "type": "uri",
               "label": "Quiz",
-              "uri": "google.com"
+              "uri": "http://linecorp.com"
             },
             "style": "primary",
             "color": "#14213d"
