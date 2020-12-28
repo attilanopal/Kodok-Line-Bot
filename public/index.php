@@ -82,10 +82,12 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                 {
                     // send same message as reply to user
                     // $result = $bot->replyText($event['replyToken'],'ini user Id kamu : '.$event['source']['userId']);
-                    $multiMessageBuilder = new MultiMessageBuilder();
                    if(strtolower($event['message']['text'])=='!tes'){
                        $pesanTes = new TextMessageBuilder('Masuk');
                        $result = bot->replyMessage($event['replyToken'],$pesanTes);
+                   }else if (strtolower($event['message']['text'])=='!tes2'){
+                        $pesanTes = new TextMessageBuilder('Masuk');
+                        $result = bot->replyMessage($event['replyToken'],$pesanTes);
                    }
                     else if(strtolower($event['message']['text']) == '!myuserid'){
                     // or we can use replyMessage() instead to send reply message
