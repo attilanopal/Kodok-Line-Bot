@@ -73,8 +73,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
     
  
     $data = json_decode($body, true);
-    $autoReplyStatus = 'Off';
-    $prefix='!';
     if(is_array($data['events'])){
         foreach ($data['events'] as $event)
         {   
@@ -94,18 +92,24 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $multiMessageBuilder->add($textMessageUserId);
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
 
-                    }else if(strtolower($event['message']['text'])=='!main'){
+                    }else if(strtolower($event['message']['text'])=='!menu'){
                         $flexTemplate = file_get_contents("../flex_main.json"); // template flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                             'replyToken' => $event['replyToken'],
                             'messages'   => [
                                 [
                                     'type'     => 'flex',
-                                    'altText'  => 'Main Menu',
+                                    'altText'  => '[Main Menu]',
                                     'contents' => json_decode($flexTemplate)
                                 ]
                             ],
                         ]);
+                    }else if(strtolower($event['message']['text'])=='!start'){
+                        $start1 = new TextMessageBuilder('Selamat Datang di Akun Bot Kodok');
+                        $start2 = new TextMessageBuilder('Bot ini ditujukan untuk anda yang ingin mulai belajar bahasa pemrograman C++. Dalam bot ini disediakan materi 
+                        materi yang dapat dipelajari, kemudian juga terdapat quiz untuk melatih pengetahuan tentang materi yang telah diberikan.');
+                        $start3 = new TextMessageBuilder('Sebagai langkah awal, silahkan ketikkan perintah "!menu" untuk membuka menu utama');
+                        $start4 = new StickerMessageBuilder('1','407');
                     }
                 }//Content api
                 elseif (
