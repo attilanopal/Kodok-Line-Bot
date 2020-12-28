@@ -107,8 +107,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     }else if(strtolower($event['message']['text'])=='!start'){
                         $kumpulanStart = new MultiMessageBuilder();
                         $start1 = new TextMessageBuilder('Selamat Datang di Akun Bot Kodok');
-                        $start2 = new TextMessageBuilder('Bot ini ditujukan untuk anda yang ingin mulai belajar bahasa pemrograman C++. Dalam bot ini disediakan materi 
-                        materi yang dapat dipelajari, kemudian juga terdapat quiz untuk melatih pengetahuan tentang materi yang telah diberikan.');
+                        $start2 = new TextMessageBuilder('Bot ini ditujukan untuk anda yang ingin mulai belajar bahasa pemrograman C++. Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terdapat quiz untuk melatih pengetahuan tentang materi yang telah diberikan.');
                         $start3 = new TextMessageBuilder('Sebagai langkah awal, silahkan ketikkan perintah "!menu" untuk membuka menu utama');
                         $start4 = new StickerMessageBuilder('1','407');
                         $kumpulanStart->add($start1);

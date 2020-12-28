@@ -117,11 +117,11 @@
         "contents": [
           {
             "type": "span",
-            "text": "menemukan bug?, pilih menu"
+            "text": "untuk kontak admin, pilih menu"
           },
           {
             "type": "span",
-            "text": "\"Bugs\"",
+            "text": "\"Admin\"",
             "style": "normal",
             "weight": "bold"
           }
@@ -130,6 +130,14 @@
         "wrap": true,
         "offsetTop": "sm",
         "margin": "sm"
+      },
+      {
+        "type": "text",
+        "text": "*bot masih dalam tahap pengembangan. beberapa bug mungkin muncul",
+        "size": "7px",
+        "offsetStart": "5px",
+        "color": "#ff0000",
+        "offsetTop": "sm"
       },
       {
         "type": "separator",
@@ -187,8 +195,8 @@
         "type": "button",
         "action": {
           "type": "uri",
-          "label": "Bugs",
-          "uri": "http://linecorp.com/"
+          "label": "Admin",
+          "uri": "https://line.me/ti/p/0o9KBc9esh"
         },
         "style": "secondary",
         "margin": "md"
