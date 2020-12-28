@@ -1,0 +1,170 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Learning Section",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#fca311",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+        "aspectRatio": "1:1",
+        "aspectMode": "fit",
+        "offsetTop": "sm",
+        "offsetBottom": "none",
+        "margin": "none"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Pengenalan Bahasa C++",
+            "weight": "bold",
+            "decoration": "underline",
+            "offsetBottom": "sm"
+          },
+          {
+            "type": "text",
+            "text": "Pada modul ini, kita akan mempelajari",
+            "size": "sm",
+            "margin": "none"
+          },
+          {
+            "type": "text",
+            "text": "beberapa hal yang perlu diketahui sebel-",
+            "size": "sm",
+            "margin": "none"
+          },
+          {
+            "type": "text",
+            "text": "kita mulai coding menggunakan C++.",
+            "size": "sm",
+            "margin": "none"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Yuk Mulaii",
+              "uri": "http://linecorp.com/"
+            },
+            "style": "primary",
+            "color": "#004e89"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Learning Section",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#fca311",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+        "aspectRatio": "1:1",
+        "aspectMode": "fit",
+        "offsetTop": "sm",
+        "offsetBottom": "none",
+        "margin": "none"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Pengenalan Bahasa C++",
+            "weight": "bold",
+            "decoration": "underline",
+            "offsetBottom": "sm"
+          },
+          {
+            "type": "text",
+            "text": "Pada modul ini, akan dipelajari dasar-",
+            "size": "sm",
+            "margin": "none"
+          },
+          {
+            "type": "text",
+            "text": "dasar yang perlu kalian ketahui seputar",
+            "size": "sm",
+            "margin": "none"
+          },
+          {
+            "type": "text",
+            "text": "bahasa pemrograman C++",
+            "size": "sm"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Mulai Belajar",
+              "uri": "http://linecorp.com/"
+            },
+            "style": "primary",
+            "color": "#004e89"
+          }
+        ]
+      }
+    }
+  ]
+}

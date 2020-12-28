@@ -99,7 +99,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                             'messages'   => [
                                 [
                                     'type'     => 'flex',
-                                    'altText'  => '[Main Menu]',
+                                    'altText'  => '[Menu Utama]',
                                     'contents' => json_decode($flexTemplate)
                                 ]
                             ],
@@ -115,9 +115,21 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                         $kumpulanStart->add($start3);
                         $kumpulanStart->add($start4);
                         $result = $bot->replyMessage($event['replyToken'],$kumpulanStart);
+                    }else if(strtolower($event['message']['text'])=='!learn'){
+                        $flexTemplate = file_get_contents("../flex_learn.json"); // template flex message
+                        $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
+                            'replyToken' => $event['replyToken'],
+                            'messages'   => [
+                                [
+                                    'type'     => 'flex',
+                                    'altText'  => '[Materi C++]',
+                                    'contents' => json_decode($flexTemplate)
+                                ]
+                            ],
+                        ]);
                     }
                 }//Content api
-                elseif (
+                elseif (    
                     $event['message']['type'] == 'image' or
                     $event['message']['type'] == 'video' or
                     $event['message']['type'] == 'audio' or
@@ -126,7 +138,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $contentURL = " https://kodook.herokuapp.com/public/content/" . $event['message']['id'];
                     $contentType = ucfirst($event['message']['type']);
                     $result = $bot->replyText($event['replyToken'],
-                        $contentType . " yang Anda kirim bisa diakses dari link:\n " . $contentURL);
+                        $contentType . " yang kamu kirim aku upload di link inii:\n" . $contentURL);
                 } 
                 $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
                     return $response

@@ -160,9 +160,9 @@
           {
             "type": "button",
             "action": {
-              "type": "uri",
+              "type": "message",
               "label": "Learn",
-              "uri": "https://liff.line.me/1655528568-G8elWRKL"
+              "text": "!learn"
             },
             "style": "primary",
             "color": "#fca311"
