@@ -1,204 +1,205 @@
 {
-    "type": "bubble",
-    "header": {
-      "type": "box",
-      "layout": "baseline",
-      "contents": [
-        {
-          "type": "text",
-          "text": "Main Menu",
-          "size": "xl",
-          "weight": "bold",
-          "margin": "none",
-          "color": "#ffffff",
-          "style": "normal",
-          "decoration": "none",
-          "align": "center",
-          "wrap": true,
-          "offsetStart": "0px",
-          "offsetEnd": "0px",
-          "offsetBottom": "6px",
-          "position": "relative",
-          "gravity": "center",
-          "offsetTop": "xs"
-        }
-      ],
-      "margin": "sm",
-      "spacing": "none",
-      "borderWidth": "none",
-      "cornerRadius": "none",
-      "offsetTop": "none",
-      "offsetBottom": "none",
-      "offsetStart": "none",
-      "offsetEnd": "none",
-      "paddingAll": "md",
-      "paddingTop": "md",
-      "paddingBottom": "md",
-      "paddingStart": "md",
-      "paddingEnd": "md",
-      "backgroundColor": "#112233"
-    },
-    "hero": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "image",
-          "url": "https://qph.fs.quoracdn.net/main-qimg-d1a47998132d0a3f18f837ef00f6ce89.webp",
-          "margin": "none",
-          "offsetTop": "none",
-          "offsetBottom": "none",
-          "offsetStart": "none",
-          "offsetEnd": "none",
-          "animated": false,
-          "size": "full",
-          "aspectMode": "cover",
-          "aspectRatio": "602:229"
-        },
-        {
-          "type": "text",
-          "text": "Selamat Datang di Main Menu !",
-          "offsetStart": "none",
-          "align": "center",
-          "weight": "bold",
-          "offsetTop": "sm",
-          "margin": "sm"
-        }
-      ]
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "offsetStart": "sm",
-          "size": "sm",
-          "contents": [
-            {
-              "type": "span",
-              "text": "Untuk memulai belajar, pilih menu ",
-              "decoration": "none"
-            },
-            {
-              "type": "span",
-              "text": "\"Learn\"",
-              "style": "normal",
-              "weight": "bold"
-            }
-          ],
-          "margin": "sm"
-        },
-        {
-          "type": "text",
-          "offsetStart": "sm",
-          "size": "sm",
-          "contents": [
-            {
-              "type": "span",
-              "text": "Untuk mencoba quiz, pilih menu "
-            },
-            {
-              "type": "span",
-              "text": "\"Quiz\"",
-              "style": "normal",
-              "weight": "bold"
-            }
-          ],
-          "offsetBottom": "none",
-          "wrap": true,
-          "offsetTop": "xs",
-          "margin": "sm"
-        },
-        {
-          "type": "text",
-          "offsetStart": "sm",
-          "size": "sm",
-          "contents": [
-            {
-              "type": "span",
-              "text": "Ingin melaporkan bug?, pilih menu"
-            },
-            {
-              "type": "span",
-              "text": "\"Bugs\"",
-              "style": "normal",
-              "weight": "bold"
-            }
-          ],
-          "offsetBottom": "none",
-          "wrap": true,
-          "offsetTop": "sm",
-          "margin": "sm"
-        },
-        {
-          "type": "separator",
-          "margin": "lg",
-          "color": "#ffffff00"
-        }
-      ],
-      "paddingAll": "sm",
-      "paddingTop": "sm",
-      "offsetTop": "sm"
-    },
-    "footer": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "box",
-          "layout": "horizontal",
-          "contents": [
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Learn",
-                "uri": "http://linecorp.com/"
-              },
-              "style": "primary",
-              "color": "#fca311"
-            },
-            {
-              "type": "separator",
-              "margin": "md",
-              "color": "#dddddd00"
-            },
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Quiz",
-                "uri": "http://linecorp.com/"
-              },
-              "style": "primary",
-              "color": "#14213d"
-            }
-          ],
-          "margin": "none",
-          "offsetTop": "sm"
-        },
-        {
-          "type": "separator",
-          "color": "#ffffff00",
-          "margin": "sm"
-        },
-        {
-          "type": "button",
-          "action": {
-            "type": "uri",
-            "label": "Bugs",
-            "uri": "http://linecorp.com/"
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "baseline",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Main Menu",
+        "size": "xl",
+        "weight": "bold",
+        "margin": "none",
+        "color": "#ffffff",
+        "style": "normal",
+        "decoration": "none",
+        "align": "center",
+        "wrap": true,
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "offsetBottom": "6px",
+        "position": "relative",
+        "gravity": "center",
+        "offsetTop": "xs"
+      }
+    ],
+    "margin": "sm",
+    "spacing": "none",
+    "borderWidth": "none",
+    "cornerRadius": "none",
+    "offsetTop": "none",
+    "offsetBottom": "none",
+    "offsetStart": "none",
+    "offsetEnd": "none",
+    "paddingAll": "md",
+    "paddingTop": "md",
+    "paddingBottom": "md",
+    "paddingStart": "md",
+    "paddingEnd": "md",
+    "backgroundColor": "#112233"
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://qph.fs.quoracdn.net/main-qimg-d1a47998132d0a3f18f837ef00f6ce89.webp",
+        "margin": "none",
+        "offsetTop": "none",
+        "offsetBottom": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "animated": false,
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "602:229"
+      },
+      {
+        "type": "text",
+        "text": "Selamat Datang di Main Menu !",
+        "offsetStart": "none",
+        "align": "center",
+        "weight": "bold",
+        "offsetTop": "sm",
+        "margin": "sm"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "offsetStart": "sm",
+        "size": "sm",
+        "contents": [
+          {
+            "type": "span",
+            "text": "Untuk memulai belajar, pilih menu ",
+            "decoration": "none"
           },
-          "style": "secondary",
-          "margin": "md"
+          {
+            "type": "span",
+            "text": "\"Learn\"",
+            "style": "normal",
+            "weight": "bold"
+          }
+        ],
+        "margin": "sm"
+      },
+      {
+        "type": "text",
+        "offsetStart": "sm",
+        "size": "sm",
+        "contents": [
+          {
+            "type": "span",
+            "text": "Untuk mencoba quiz, pilih menu "
+          },
+          {
+            "type": "span",
+            "text": "\"Quiz\"",
+            "style": "normal",
+            "weight": "bold"
+          }
+        ],
+        "offsetBottom": "none",
+        "wrap": true,
+        "offsetTop": "xs",
+        "margin": "sm"
+      },
+      {
+        "type": "text",
+        "offsetStart": "sm",
+        "size": "sm",
+        "contents": [
+          {
+            "type": "span",
+            "text": "menemukan bug?, pilih menu"
+          },
+          {
+            "type": "span",
+            "text": "\"Bugs\"",
+            "style": "normal",
+            "weight": "bold"
+          }
+        ],
+        "offsetBottom": "none",
+        "wrap": true,
+        "offsetTop": "sm",
+        "margin": "sm"
+      },
+      {
+        "type": "separator",
+        "margin": "lg",
+        "color": "#ffffff00"
+      }
+    ],
+    "paddingAll": "sm",
+    "paddingTop": "sm",
+    "offsetTop": "sm"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Learn",
+              "uri": "https://liff.line.me/1655528568-G8elWRK"
+            },
+            "style": "primary",
+            "color": "#fca311"
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#dddddd00"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Quiz",
+              "uri": "http://linecorp.com/"
+            },
+            "style": "primary",
+            "color": "#14213d"
+          }
+        ],
+        "margin": "none",
+        "offsetTop": "sm"
+      },
+      {
+        "type": "separator",
+        "color": "#ffffff00",
+        "margin": "sm"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Bugs",
+          "uri": "http://linecorp.com/"
         },
-        {
-          "type": "separator",
-          "margin": "md"
-        }
-      ],
-      "paddingTop": "none",
-      "offsetTop": "md"
-    }
+        "style": "secondary",
+        "margin": "md"
+      },
+      {
+        "type": "separator",
+        "margin": "md",
+        "color": "#ffffff00"
+      }
+    ],
+    "paddingTop": "none",
+    "offsetTop": "md"
   }
+}
