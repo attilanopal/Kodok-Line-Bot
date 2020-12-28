@@ -154,7 +154,7 @@
             "action": {
               "type": "uri",
               "label": "Learn",
-              "uri": "https://liff.line.me/1655528568-G8elWRK"
+              "uri": "https://liff.line.me/1655528568-G8elWRKL"
             },
             "style": "primary",
             "color": "#fca311"
@@ -169,7 +169,7 @@
             "action": {
               "type": "uri",
               "label": "Quiz",
-              "uri": "http://linecorp.com/"
+              "uri": "google.com"
             },
             "style": "primary",
             "color": "#14213d"
