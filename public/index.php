@@ -114,7 +114,7 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                         $kumpulanStart->add($start3);
                         $kumpulanStart->add($start4);
                         $result = $bot->replyMessage($event['replyToken'],$kumpulanStart);
-                    }else if(strtolower($event['message']['text'])=='!learn'){ // Materi2
+                    }else if(strtolower($event['message']['text'])=='!learn'){ // Materi-materi cpp
                         $flexTemplate = file_get_contents("../flex_learn.json"); // flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                             'replyToken' => $event['replyToken'],
@@ -126,8 +126,20 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                                 ]
                             ],
                         ]);
-                    }else if(strtolower($event['message']['text'])=='!lc1'){ // Materi2
+                    }else if(strtolower($event['message']['text'])=='!lc1'){ // Materi1
                         $flexTemplate = file_get_contents("../flex_lc1.json"); // flex message
+                        $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
+                            'replyToken' => $event['replyToken'],
+                            'messages'   => [
+                                [
+                                    'type'     => 'flex',
+                                    'altText'  => '[Materi C++]',
+                                    'contents' => json_decode($flexTemplate)
+                                ]
+                            ],
+                        ]);
+                    }else if(strtolower($event['message']['text'])=='!lc2'){ // Materi2
+                        $flexTemplate = file_get_contents("../flex_lc2.json"); // flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                             'replyToken' => $event['replyToken'],
                             'messages'   => [
