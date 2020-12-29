@@ -36,7 +36,7 @@
     "paddingBottom": "md",
     "paddingStart": "md",
     "paddingEnd": "md",
-    "backgroundColor": "#112233"
+    "backgroundColor": "#004e89"
   },
   "hero": {
     "type": "box",
@@ -61,8 +61,8 @@
         "offsetStart": "none",
         "align": "center",
         "weight": "bold",
-        "offsetTop": "sm",
-        "margin": "sm"
+        "offsetTop": "xs",
+        "margin": "none"
       }
     ]
   },
@@ -87,7 +87,7 @@
             "weight": "bold"
           }
         ],
-        "margin": "sm"
+        "margin": "none"
       },
       {
         "type": "text",
@@ -96,7 +96,7 @@
         "contents": [
           {
             "type": "span",
-            "text": "Untuk mencoba quiz, pilih menu "
+            "text": "Untuk mengerjakan quiz, pilih menu "
           },
           {
             "type": "span",
@@ -107,8 +107,8 @@
         ],
         "offsetBottom": "none",
         "wrap": true,
-        "offsetTop": "xs",
-        "margin": "sm"
+        "offsetTop": "none",
+        "margin": "none"
       },
       {
         "type": "text",
@@ -128,8 +128,8 @@
         ],
         "offsetBottom": "none",
         "wrap": true,
-        "offsetTop": "sm",
-        "margin": "sm"
+        "offsetTop": "none",
+        "margin": "none"
       },
       {
         "type": "text",
@@ -180,7 +180,7 @@
               "uri": "http://linecorp.com"
             },
             "style": "primary",
-            "color": "#14213d"
+            "color": "#004e89"
           }
         ],
         "margin": "none",

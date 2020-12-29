@@ -68,7 +68,7 @@
             "contents": [
               {
                 "type": "span",
-                "text": "Secara singkat, C++ adalah ",
+                "text": "Secara singkat, C++ merupakan ",
                 "size": "sm"
               },
               {
@@ -93,7 +93,7 @@
               },
               {
                 "type": "span",
-                "text": " yang merupakan"
+                "text": " yang adalah"
               }
             ],
             "adjustMode": "shrink-to-fit"
@@ -200,14 +200,14 @@
           },
           {
             "type": "text",
-            "text": "- Code nya bersifat fleksibel di semua jenis",
+            "text": "- Code nya bersifat fleksibel di semua ",
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
-            "text": "komputer",
+            "text": "jenis komputer",
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit"
@@ -418,14 +418,14 @@
         "contents": [
           {
             "type": "text",
-            "text": "Materi ke 2 berisi persiapan yang diperlukan",
+            "text": "Materi ke 2 berisi persiapan sebelum kita",
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
-            "text": "untuk mulai ngoding C++.",
+            "text": "dapat mulai ngoding C++.",
             "adjustMode": "shrink-to-fit",
             "margin": "xs",
             "size": "sm"
