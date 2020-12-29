@@ -58,7 +58,7 @@
           },
           {
             "type": "text",
-            "text": "beberapa hal yang perlu diketahui sebel-",
+            "text": "beberapa hal yang perlu diketahui sebelum",
             "size": "sm",
             "margin": "none",
             "adjustMode": "shrink-to-fit"
@@ -180,6 +180,94 @@
               "type": "message",
               "label": "Mulai Belajar",
               "text": "!lc2"
+            },
+            "style": "primary",
+            "color": "#004e89"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Materi C++",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none",
+            "adjustMode": "shrink-to-fit"
+          }
+        ],
+        "backgroundColor": "#fca311",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://i.ibb.co/mzg1qZn/lc3.png",
+        "aspectMode": "cover",
+        "offsetTop": "sm",
+        "offsetBottom": "none",
+        "margin": "none",
+        "aspectRatio": "180:160"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Hello World!",
+            "weight": "bold",
+            "decoration": "underline",
+            "offsetBottom": "sm",
+            "adjustMode": "shrink-to-fit"
+          },
+          {
+            "type": "text",
+            "text": "Pada modul ini, kita akan mempelajari",
+            "size": "sm",
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
+          },
+          {
+            "type": "text",
+            "text": "struktur dari pemrograman dengan C++,",
+            "size": "sm",
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
+          },
+          {
+            "type": "text",
+            "text": "juga menjalankan program output.",
+            "size": "sm",
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Mulai Belajar",
+              "text": "!lc3"
             },
             "style": "primary",
             "color": "#004e89"

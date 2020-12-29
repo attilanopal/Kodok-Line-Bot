@@ -150,6 +150,25 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                                 ]
                             ],
                         ]);
+                    }else if(strtolower($event['message']['text'])=='!lc3'){ // Materi2
+                        $flexTemplate = file_get_contents("../flex_lc3.json"); // flex message
+                        $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
+                            'replyToken' => $event['replyToken'],
+                            'messages'   => [
+                                [
+                                    'type'     => 'flex',
+                                    'altText'  => '[Materi C++]',
+                                    'contents' => json_decode($flexTemplate)
+                                ]
+                            ],
+                        ]);
+                    }else{
+                        $noCommand = new TextMessageBuilder('Maaf, bot tidak memahami perintah yang anda berikan. Pastikan penulisan perintah sudah benar.');
+                        $commandSuggest = new TextMessageBuilder('Untuk mengecek list command silahkan gunakan perintah "!commands"');
+                        $multiNoCommand = new MultiMessageBuilder();
+                        $multiNoCommand->add($noCommand);
+                        $multiNoCommand->add($commandSuggest);
+                        $result = $bot->replyMessage($event['replyToken'],$multiNoCommand);
                     }
                 }//Content api
                 elseif (    

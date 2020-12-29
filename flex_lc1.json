@@ -68,12 +68,12 @@
             "contents": [
               {
                 "type": "span",
-                "text": "Secara singkat, C++ merupakan ",
+                "text": "C++ adalah ",
                 "size": "sm"
               },
               {
                 "type": "span",
-                "text": "bahasa",
+                "text": "bahasa Pemrograman kom-",
                 "decoration": "underline",
                 "size": "sm"
               }
@@ -88,19 +88,19 @@
             "contents": [
               {
                 "type": "span",
-                "text": "Pemrograman komputer",
+                "text": "puter",
                 "decoration": "underline"
               },
               {
                 "type": "span",
-                "text": " yang adalah"
+                "text": " yang merupakan perluasan dari "
               }
             ],
             "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
-            "text": "perluasan dari bahasa pemrograman C.",
+            "text": "bahasa pemrograman C.",
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit"
@@ -444,7 +444,7 @@
           },
           {
             "type": "text",
-            "text": "utama.",
+            "text": "materi.",
             "adjustMode": "shrink-to-fit",
             "margin": "xs",
             "size": "sm"
@@ -459,8 +459,8 @@
             "type": "button",
             "action": {
               "type": "message",
-              "label": "Menu Utama",
-              "text": "!menu"
+              "label": "Menu Materi",
+              "text": "!learn"
             },
             "style": "primary",
             "color": "#fca311"
