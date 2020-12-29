@@ -1,0 +1,346 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "direction": "ltr",
+        "header": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Pengenalan Bahasa C++",
+              "align": "center",
+              "size": "xl",
+              "weight": "bold",
+              "color": "#ffffff",
+              "margin": "none",
+              "offsetTop": "none"
+            }
+          ],
+          "backgroundColor": "#004e89",
+          "margin": "none",
+          "spacing": "md",
+          "offsetTop": "none",
+          "borderWidth": "none",
+          "paddingAll": "none",
+          "paddingTop": "lg",
+          "paddingBottom": "lg"
+        },
+        "hero": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Apa itu C++ ?",
+              "weight": "bold",
+              "decoration": "none",
+              "offsetBottom": "none",
+              "align": "center",
+              "margin": "sm",
+              "size": "xl",
+              "offsetTop": "md"
+            }
+          ],
+          "margin": "none",
+          "spacing": "none",
+          "borderWidth": "none",
+          "offsetStart": "none",
+          "offsetEnd": "none",
+          "paddingStart": "none"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Secara singkat, C++ adalah",
+              "size": "sm",
+              "margin": "none",
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "Secara singkat, C++ adalah ",
+                  "size": "sm"
+                },
+                {
+                  "type": "span",
+                  "text": "bahasa",
+                  "decoration": "underline",
+                  "size": "sm"
+                }
+              ],
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "text",
+              "text": "Pemrograman komputer yang merupakan",
+              "size": "sm",
+              "margin": "none",
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "Pemrograman komputer",
+                  "decoration": "underline"
+                },
+                {
+                  "type": "span",
+                  "text": " yang merupakan"
+                }
+              ],
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "text",
+              "text": "perluasan dari bahasa pemrograman C.",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "separator",
+              "color": "#00000000",
+              "margin": "lg"
+            },
+            {
+              "type": "text",
+              "text": "Bahasa C++ dikembangkan oleh Bjarne",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "text",
+              "text": "Stroustrup. c++ lahir pada tahun 1980an",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "header": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Pengenalan Bahasa C++",
+              "align": "center",
+              "size": "xl",
+              "weight": "bold",
+              "color": "#ffffff",
+              "margin": "none",
+              "offsetTop": "none"
+            }
+          ],
+          "backgroundColor": "#004e89",
+          "margin": "none",
+          "spacing": "md",
+          "offsetTop": "none",
+          "borderWidth": "none",
+          "paddingAll": "none",
+          "paddingTop": "lg",
+          "paddingBottom": "lg"
+        },
+        "hero": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Kelebihan C++",
+              "weight": "bold",
+              "decoration": "none",
+              "offsetBottom": "none",
+              "align": "center",
+              "margin": "sm",
+              "size": "xl",
+              "offsetTop": "md"
+            }
+          ],
+          "margin": "none",
+          "spacing": "none",
+          "borderWidth": "none",
+          "offsetStart": "none",
+          "offsetEnd": "none",
+          "paddingStart": "none"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "- Tersedia di semua jenis komputer.",
+              "size": "sm",
+              "margin": "none",
+              "contents": [],
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "separator",
+              "color": "#00000000",
+              "margin": "sm"
+            },
+            {
+              "type": "text",
+              "text": "- Code nya bersifat fleksibel di semua jenis",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "text",
+              "text": "komputer",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "separator",
+              "color": "#00000000",
+              "margin": "sm"
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit",
+              "text": "- Proses execute programnya lebih cepat"
+            },
+            {
+              "type": "separator",
+              "color": "#00000000",
+              "margin": "sm"
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit",
+              "text": "- Hanya memiliki sedikit kata-kata kunci"
+            },
+            {
+              "type": "separator",
+              "color": "#00000000",
+              "margin": "sm"
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit",
+              "text": "- Memiliki dukungan pustaka yang banyak"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "header": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Pengenalan Bahasa C++",
+              "align": "center",
+              "size": "xl",
+              "weight": "bold",
+              "color": "#ffffff",
+              "margin": "none",
+              "offsetTop": "none"
+            }
+          ],
+          "backgroundColor": "#004e89",
+          "margin": "none",
+          "spacing": "md",
+          "offsetTop": "none",
+          "borderWidth": "none",
+          "paddingAll": "none",
+          "paddingTop": "lg",
+          "paddingBottom": "lg"
+        },
+        "hero": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Lanjutan..",
+              "weight": "bold",
+              "decoration": "none",
+              "offsetBottom": "none",
+              "align": "center",
+              "margin": "sm",
+              "size": "xl",
+              "offsetTop": "md"
+            }
+          ],
+          "margin": "none",
+          "spacing": "none",
+          "borderWidth": "none",
+          "offsetStart": "none",
+          "offsetEnd": "none",
+          "paddingStart": "none",
+          "height": "38px"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Untuk memahami materi ini lebih lanjut,",
+              "size": "sm",
+              "margin": "xs",
+              "adjustMode": "shrink-to-fit"
+            },
+            {
+              "type": "text",
+              "text": "sangat disarankan untuk melihat materi",
+              "adjustMode": "shrink-to-fit",
+              "margin": "xs",
+              "size": "sm"
+            },
+            {
+              "type": "text",
+              "text": "pada video yang tercantum pada tombol",
+              "adjustMode": "shrink-to-fit",
+              "margin": "xs",
+              "size": "sm"
+            },
+            {
+              "type": "text",
+              "text": "di bawah ini",
+              "adjustMode": "shrink-to-fit",
+              "margin": "xs",
+              "size": "sm"
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "Video Pengenalan C++",
+                "uri": "https://www.youtube.com/watch?v=tlIcErCYbtw"
+              },
+              "style": "primary",
+              "color": "#014f86"
+            }
+          ]
+        }
+      }
+    ]
+  }

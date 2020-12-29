@@ -80,11 +80,8 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
             {   
                 if($event['message']['type'] == 'text')
                 {
-                    // send same message as reply to user
-                    // $result = $bot->replyText($event['replyToken'],'ini user Id kamu : '.$event['source']['userId']);
                     $multiMessageBuilder = new MultiMessageBuilder();
-                    if(strtolower($event['message']['text']) == '!myuserid'){
-                    // or we can use replyMessage() instead to send reply message
+                    if(strtolower($event['message']['text']) == '!myuserid'){ // memberi userid
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
                     $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
                     $textMessageUserId = new TextMessageBuilder($event['source']['userId']);
@@ -92,8 +89,8 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     $multiMessageBuilder->add($textMessageUserId);
                     $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
 
-                    }else if(strtolower($event['message']['text'])=='!menu'){
-                        $flexTemplate = file_get_contents("../flex_main.json"); // template flex message
+                    }else if(strtolower($event['message']['text'])=='!menu'){ //main menu dengan flex
+                        $flexTemplate = file_get_contents("../flex_main.json");
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                             'replyToken' => $event['replyToken'],
                             'messages'   => [
@@ -117,8 +114,20 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                         $kumpulanStart->add($start3);
                         $kumpulanStart->add($start4);
                         $result = $bot->replyMessage($event['replyToken'],$kumpulanStart);
-                    }else if(strtolower($event['message']['text'])=='!learn'){
-                        $flexTemplate = file_get_contents("../flex_learn.json"); // template flex message
+                    }else if(strtolower($event['message']['text'])=='!learn'){ // Materi2
+                        $flexTemplate = file_get_contents("../flex_learn.json"); // flex message
+                        $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
+                            'replyToken' => $event['replyToken'],
+                            'messages'   => [
+                                [
+                                    'type'     => 'flex',
+                                    'altText'  => '[Materi C++]',
+                                    'contents' => json_decode($flexTemplate)
+                                ]
+                            ],
+                        ]);
+                    }else if(strtolower($event['message']['text'])=='!lc1'){ // Materi2
+                        $flexTemplate = file_get_contents("../flex_lc1.json"); // flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                             'replyToken' => $event['replyToken'],
                             'messages'   => [
@@ -163,17 +172,6 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
         ->withHeader('Content-Type', 'application/json')
         ->withStatus($result->getHTTPStatus());
 });
-$app->get('/pushmessage/tilah', function ($req, $response) use ($bot) {
-    // send push message to user
-    $userId = 'Udcbc496f3391cdd5f5ab5c5e365e7e2d';
-    $textMessageBuilder = new TextMessageBuilder('Hai Azam, Valo Kuy?');
-    $result = $bot->pushMessage($userId, $textMessageBuilder);
- 
-    $response->getBody()->write("Pesan push nya sudah saya kirim !");
-    return $response
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus($result->getHTTPStatus());
-});
 $app->get('/multicast', function($req, $response) use ($bot)
 {
     // list of users
@@ -183,8 +181,6 @@ $app->get('/multicast', function($req, $response) use ($bot)
     // send multicast message to user
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan multicast');
     $result = $bot->multicast($userList, $textMessageBuilder);
- 
- 
     $response->getBody()->write("Pesan multicast nya sudah saya kirim mas");
     return $response
         ->withHeader('Content-Type', 'application/json')
