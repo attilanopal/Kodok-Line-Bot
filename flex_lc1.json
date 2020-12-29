@@ -356,6 +356,117 @@
           }
         ]
       }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Pengenalan Bahasa C++",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#004e89",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Next.. Materi 2",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetBottom": "none",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "offsetTop": "md"
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#00000000"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "borderWidth": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "paddingStart": "none",
+        "height": "38px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Materi ke 2 berisi persiapan yang diperlukan",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit"
+          },
+          {
+            "type": "text",
+            "text": "untuk mulai ngoding C++.",
+            "adjustMode": "shrink-to-fit",
+            "margin": "xs",
+            "size": "sm"
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#00000000"
+          },
+          {
+            "type": "text",
+            "text": "Materi ke 2 dapat diakses melalui menu",
+            "adjustMode": "shrink-to-fit",
+            "margin": "xs",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "utama.",
+            "adjustMode": "shrink-to-fit",
+            "margin": "xs",
+            "size": "sm"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu Utama",
+              "text": "!menu"
+            },
+            "style": "primary",
+            "color": "#fca311"
+          }
+        ]
+      }
     }
   ]
 }

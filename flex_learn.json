@@ -9,13 +9,14 @@
         "contents": [
           {
             "type": "text",
-            "text": "Learning Section",
+            "text": "Materi C++",
             "align": "center",
             "size": "xl",
             "weight": "bold",
             "color": "#ffffff",
             "margin": "none",
-            "offsetTop": "none"
+            "offsetTop": "none",
+            "adjustMode": "shrink-to-fit"
           }
         ],
         "backgroundColor": "#fca311",
@@ -45,13 +46,15 @@
             "text": "Pengenalan Bahasa C++",
             "weight": "bold",
             "decoration": "underline",
-            "offsetBottom": "sm"
+            "offsetBottom": "sm",
+            "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
             "text": "Pada modul ini, kita akan mempelajari",
             "size": "sm",
-            "margin": "none"
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
@@ -64,7 +67,8 @@
             "type": "text",
             "text": "kita mulai coding menggunakan C++.",
             "size": "sm",
-            "margin": "none"
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
           }
         ]
       },
@@ -93,7 +97,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "Learning Section",
+            "text": "Materi C++",
             "align": "center",
             "size": "xl",
             "weight": "bold",
@@ -113,9 +117,9 @@
       },
       "hero": {
         "type": "image",
-        "url": "https://kodook.herokuapp.com/public/content/13286318850209",
-        "aspectRatio": "1:1",
-        "aspectMode": "fit",
+        "url": "https://kodook.herokuapp.com/public/content/13287865404192",
+        "aspectRatio": "1200:1200",
+        "aspectMode": "cover",
         "offsetTop": "sm",
         "offsetBottom": "none",
         "margin": "none"
@@ -126,27 +130,43 @@
         "contents": [
           {
             "type": "text",
-            "text": "Pengenalan Bahasa C++",
+            "text": "Menginstall IDE",
             "weight": "bold",
             "decoration": "underline",
-            "offsetBottom": "sm"
+            "offsetBottom": "sm",
+            "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
-            "text": "Pada modul ini, akan dipelajari dasar-",
+            "text": "Pada modul ini, kita akan mencoba meng-",
             "size": "sm",
-            "margin": "none"
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
-            "text": "dasar yang perlu kalian ketahui seputar",
+            "text": "install IDE sebagai persiapan sebelum ",
             "size": "sm",
-            "margin": "none"
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
-            "text": "bahasa pemrograman C++",
-            "size": "sm"
+            "text": "kita memasuki bagian ",
+            "size": "sm",
+            "adjustMode": "shrink-to-fit",
+            "contents": [
+              {
+                "type": "span",
+                "text": "kita mulai "
+              },
+              {
+                "type": "span",
+                "text": "ngoding.",
+                "style": "italic",
+                "weight": "bold"
+              }
+            ]
           }
         ]
       },
@@ -157,9 +177,9 @@
           {
             "type": "button",
             "action": {
-              "type": "uri",
+              "type": "message",
               "label": "Mulai Belajar",
-              "uri": "http://linecorp.com/"
+              "text": "!lc2"
             },
             "style": "primary",
             "color": "#004e89"

@@ -149,7 +149,7 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                     $contentURL = " https://kodook.herokuapp.com/public/content/" . $event['message']['id'];
                     $contentType = ucfirst($event['message']['type']);
                     $result = $bot->replyText($event['replyToken'],
-                        $contentType . " yang kamu kirim aku upload di link inii:\n" . $contentURL);
+                        $contentType . " yang kamu kirim aku taro di sini yaa:\n" . $contentURL);
                 } 
                 $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
                     return $response
