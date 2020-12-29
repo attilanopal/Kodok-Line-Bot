@@ -29,7 +29,7 @@
       },
       "hero": {
         "type": "image",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+        "url": "https://kodook.herokuapp.com/public/content/13286318850209",
         "aspectRatio": "1:1",
         "aspectMode": "fit",
         "offsetTop": "sm",
@@ -57,7 +57,8 @@
             "type": "text",
             "text": "beberapa hal yang perlu diketahui sebel-",
             "size": "sm",
-            "margin": "none"
+            "margin": "none",
+            "adjustMode": "shrink-to-fit"
           },
           {
             "type": "text",
@@ -74,9 +75,9 @@
           {
             "type": "button",
             "action": {
-              "type": "uri",
-              "label": "Yuk Mulaii",
-              "uri": "http://linecorp.com/"
+              "type": "message",
+              "label": "Mulai Belajar",
+              "text": "!lc1"
             },
             "style": "primary",
             "color": "#004e89"
@@ -112,7 +113,7 @@
       },
       "hero": {
         "type": "image",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+        "url": "https://kodook.herokuapp.com/public/content/13286318850209",
         "aspectRatio": "1:1",
         "aspectMode": "fit",
         "offsetTop": "sm",
