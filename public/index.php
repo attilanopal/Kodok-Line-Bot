@@ -78,10 +78,44 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
         {   
             if ($event['type'] == 'message')
             {   
+                
                 if($event['message']['type'] == 'text')
-                {
-                    $multiMessageBuilder = new MultiMessageBuilder();
+                {   
+                    if($event['source']['type']=='group' or $event['source']['type']=='room'){
+                        if(strtolower($event['message']['text'])=='!learn'or 
+                        strtolower($event['message']['text'])=='!menu'or 
+                        strtolower($event['message']['text'])=='!start'or
+                        strtolower($event['message']['text'])=='!quiz'or
+                        strtolower($event['message']['text'])=='!lc1'or
+                        strtolower($event['message']['text'])=='!lc2'or
+                        strtolower($event['message']['text'])=='!lc3'or
+                        strtolower($event['message']['text'])=='!lc4'
+
+                        ){
+                        $pesanGrup = new TextMessageBuilder('Perintah untuk belajar tidak dapat dilakukan pada grup/room. Jadi perintah yang dapat dilakukan hanya perintah dasar : ');
+                        $pesanGrup1 = new TextMessageBuilder('!myuserid,!mypic,!mystat');
+                        }else if(strtolower($event['message']['text'])=='!myuserid'){
+                            $multiMessageBuilder = new MultiMessageBuilder();
+                            $stickerMessageBuilder= new StickerMessageBuilder(1,117);
+                            $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
+                            $textMessageUserId = new TextMessageBuilder($event['source']['userId']);
+                            $multiMessageBuilder->add($textMessageBuilder);
+                            $multiMessageBuilder->add($textMessageUserId);
+                            $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
+                        }else if(strtolower($event['message']['text'])=='!mypic'){
+                            $userId=$event['source']['userId'];
+                            $profile=$getprofile->getJSONDecodedBody();
+                            $fotprof = new ImageMessageBuilder($profile['pictureUrl'],$profile['pictureUrl']);
+                            $result=$bot->replyMessage($event['replyToken'],$fotprof);
+                        }else if(strtolower($event['message']['text'])=='!mystat'){
+                            $userId=$event['source']['userId'];
+                            $profile=$getprofile->getJSONDecodedBody();
+                            $statusMessage = new TextMessageBuilder($profile['statusMessage']);
+                            $result=$bot->replyMessage($event['replyToken'],$statusMessage);
+                        }
+                    }else{
                     if(strtolower($event['message']['text']) == '!myuserid'){ // memberi userid
+                    $multiMessageBuilder = new MultiMessageBuilder();
                     $stickerMessageBuilder= new StickerMessageBuilder(1,117);
                     $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
                     $textMessageUserId = new TextMessageBuilder($event['source']['userId']);
@@ -114,6 +148,8 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                         $kumpulanStart->add($start3);
                         $kumpulanStart->add($start4);
                         $result = $bot->replyMessage($event['replyToken'],$kumpulanStart);
+                    }else if(strtolower($event['message']['text'])=="!commands"){
+
                     }else if(strtolower($event['message']['text'])=='!learn'){ // Materi-materi cpp
                         $flexTemplate = file_get_contents("../flex_learn.json"); // flex message
                         $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
@@ -162,14 +198,15 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                                 ]
                             ],
                         ]);
-                    }else{
+                    }else{ // input bukan command
                         $noCommand = new TextMessageBuilder('Maaf, bot tidak memahami perintah yang anda berikan. Pastikan penulisan perintah sudah benar.');
-                        $commandSuggest = new TextMessageBuilder('Untuk mengecek list command silahkan gunakan perintah "!commands"');
+                        $commandSuggest = new TextMessageBuilder('Untuk mengecek list perintah silahkan gunakan perintah "!commands"');
                         $multiNoCommand = new MultiMessageBuilder();
                         $multiNoCommand->add($noCommand);
                         $multiNoCommand->add($commandSuggest);
                         $result = $bot->replyMessage($event['replyToken'],$multiNoCommand);
                     }
+                }
                 }//Content api
                 elseif (    
                     $event['message']['type'] == 'image' or
