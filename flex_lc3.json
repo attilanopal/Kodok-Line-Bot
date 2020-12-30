@@ -1,744 +1,581 @@
 {
-    "type": "carousel",
-    "contents": [
-      {
-        "type": "bubble",
-        "direction": "ltr",
-        "header": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Hello World!",
-              "align": "center",
-              "size": "xl",
-              "weight": "bold",
-              "color": "#ffffff",
-              "margin": "none",
-              "offsetTop": "none"
-            }
-          ],
-          "backgroundColor": "#004e89",
-          "margin": "none",
-          "spacing": "md",
-          "offsetTop": "none",
-          "borderWidth": "none",
-          "paddingAll": "none",
-          "paddingTop": "lg",
-          "paddingBottom": "lg"
-        },
-        "hero": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "cout<<\"Hello World!\";",
-              "weight": "bold",
-              "decoration": "none",
-              "offsetBottom": "none",
-              "align": "center",
-              "margin": "sm",
-              "size": "xl",
-              "offsetTop": "md"
-            },
-            {
-              "type": "separator",
-              "margin": "lg",
-              "color": "#00000000"
-            },
-            {
-              "type": "image",
-              "url": "https://i.ibb.co/PCwTb1n/lc3-1.png",
-              "gravity": "top",
-              "aspectMode": "cover",
-              "aspectRatio": "293:210"
-            }
-          ],
-          "margin": "none",
-          "spacing": "none",
-          "borderWidth": "none",
-          "offsetStart": "none",
-          "offsetEnd": "none",
-          "paddingStart": "none"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Coba ketik ulang code yang ada di atas.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "setelah itu cobalah run code dan lihat apa",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "yang terjadi",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "separator",
-              "color": "#00000000",
-              "margin": "lg"
-            },
-            {
-              "type": "text",
-              "text": "Jika program anda menghasilkan output",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "\"Hello World!\". Maka anda telah berhasil",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "membuat program c++ pertama anda.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "*gambar kurang jelas? tekan tombol dibawah",
-              "size": "xxs",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "color": "#00000070",
-              "offsetStart": "md"
-            }
-          ]
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Buka Code",
-                "uri": "https://onlinegdb.com/7MAnLEcyt"
-              }
-            }
-          ]
-        }
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Hello World!",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#004e89",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
       },
-      {
-        "type": "bubble",
-        "header": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Hello World!",
-              "align": "center",
-              "size": "xl",
-              "weight": "bold",
-              "color": "#ffffff",
-              "margin": "none",
-              "offsetTop": "none"
-            }
-          ],
-          "backgroundColor": "#004e89",
-          "margin": "none",
-          "spacing": "md",
-          "offsetTop": "none",
-          "borderWidth": "none",
-          "paddingAll": "none",
-          "paddingTop": "lg",
-          "paddingBottom": "lg"
-        },
-        "hero": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Bedah Struktur!",
-              "weight": "bold",
-              "decoration": "none",
-              "offsetBottom": "none",
-              "align": "center",
-              "margin": "sm",
-              "size": "xl",
-              "offsetTop": "md"
-            }
-          ],
-          "margin": "none",
-          "spacing": "none",
-          "borderWidth": "none",
-          "offsetStart": "none",
-          "offsetEnd": "none",
-          "paddingStart": "none"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "#include <iostream> :",
-              "size": "sm",
-              "margin": "none",
-              "contents": [
-                {
-                  "type": "span",
-                  "text": "#include <iostream> ",
-                  "weight": "bold"
-                },
-                {
-                  "type": "span",
-                  "text": ": File header"
-                }
-              ],
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "digunakan untuk memanggil fungsi-fungsi",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "text": "dari library (<iostream> dalam code ini)"
-            },
-            {
-              "type": "text",
-              "text": "#include <iostream> :",
-              "size": "sm",
-              "margin": "none",
-              "contents": [
-                {
-                  "type": "span",
-                  "text": "using namespace std; ",
-                  "weight": "bold"
-                },
-                {
-                  "type": "span",
-                  "text": ": berarti kita"
-                }
-              ],
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "text": "kita dapat menggunakan nama objek dan"
-            },
-            {
-              "type": "text",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "text": "anda dapat menggunakan online IDE :"
-            },
-            {
-              "type": "text",
-              "text": "variabel dari library standard.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "#include <iostream> :",
-              "size": "sm",
-              "margin": "none",
-              "contents": [
-                {
-                  "type": "span",
-                  "text": "int main() ",
-                  "weight": "bold"
-                },
-                {
-                  "type": "span",
-                  "text": ": merupakan fungsi yang se-"
-                }
-              ],
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "lalu ada di tiap code C++. ia akan menja-",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "lankan kode yang ada di antara { dan }.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "#include <iostream> :",
-              "size": "sm",
-              "margin": "none",
-              "contents": [
-                {
-                  "type": "span",
-                  "text": "cout<<\"isikata\"; ",
-                  "weight": "bold"
-                },
-                {
-                  "type": "span",
-                  "text": ": merupakan perintah "
-                }
-              ],
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "untuk meng-output kata yang terdapat",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "setelah simbol \"<<\".",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "#include <iostream> :",
-              "size": "sm",
-              "margin": "none",
-              "contents": [
-                {
-                  "type": "span",
-                  "text": "return 0; ",
-                  "weight": "bold"
-                },
-                {
-                  "type": "span",
-                  "text": ": mengakhiri fungsi \"main\""
-                }
-              ],
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "beberapa program tidak memakai return.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            }
-          ]
-        }
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "cout<<\"Hello World!\";",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetBottom": "none",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "offsetTop": "md"
+          },
+          {
+            "type": "separator",
+            "margin": "lg",
+            "color": "#00000000"
+          },
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/PCwTb1n/lc3-1.png",
+            "gravity": "top",
+            "aspectMode": "cover",
+            "aspectRatio": "293:210"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "borderWidth": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "paddingStart": "none"
       },
-      {
-        "type": "bubble",
-        "header": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Hello World!",
-              "align": "center",
-              "size": "xl",
-              "weight": "bold",
-              "color": "#ffffff",
-              "margin": "none",
-              "offsetTop": "none"
-            }
-          ],
-          "backgroundColor": "#004e89",
-          "margin": "none",
-          "spacing": "md",
-          "offsetTop": "none",
-          "borderWidth": "none",
-          "paddingAll": "none",
-          "paddingTop": "lg",
-          "paddingBottom": "lg"
-        },
-        "hero": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Jangan Lupa!!!",
-              "weight": "bold",
-              "decoration": "none",
-              "offsetBottom": "none",
-              "align": "center",
-              "margin": "sm",
-              "size": "xl",
-              "offsetTop": "md"
-            },
-            {
-              "type": "separator",
-              "margin": "md",
-              "color": "#00000000"
-            }
-          ],
-          "margin": "none",
-          "spacing": "none",
-          "borderWidth": "none",
-          "offsetStart": "none",
-          "offsetEnd": "none",
-          "paddingStart": "none",
-          "height": "38px"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "diakhir setiap baris perin- ",
-              "size": "lg",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "weight": "bold"
-            },
-            {
-              "type": "text",
-              "text": "tah pada program C++.",
-              "size": "lg",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "weight": "bold"
-            },
-            {
-              "type": "separator",
-              "margin": "xxl",
-              "color": "#00000000"
-            },
-            {
-              "type": "text",
-              "text": "Jangan lupa menambahkan",
-              "size": "lg",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "weight": "bold"
-            },
-            {
-              "type": "text",
-              "text": "simbol semicolon (;)",
-              "size": "lg",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "weight": "bold"
-            }
-          ],
-          "offsetBottom": "none"
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": []
-        }
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Coba ketik ulang code yang ada di atas. setelah itu cobalah run code dan lihat apa yang terjadi",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "separator",
+            "color": "#00000000",
+            "margin": "lg"
+          },
+          {
+            "type": "text",
+            "text": "Jika program anda menghasilkan output \"Hello World!\". Maka anda telah berhasil membuat program c++ pertama anda.",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "*gambar kurang jelas? tekan tombol dibawah",
+            "size": "xxs",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "color": "#00000070",
+            "offsetStart": "md"
+          }
+        ]
       },
-      {
-        "type": "bubble",
-        "header": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Hello World!",
-              "align": "center",
-              "size": "xl",
-              "weight": "bold",
-              "color": "#ffffff",
-              "margin": "none",
-              "offsetTop": "none"
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Buka Code",
+              "uri": "https://onlinegdb.com/7MAnLEcyt"
             }
-          ],
-          "backgroundColor": "#004e89",
-          "margin": "none",
-          "spacing": "md",
-          "offsetTop": "none",
-          "borderWidth": "none",
-          "paddingAll": "none",
-          "paddingTop": "lg",
-          "paddingBottom": "lg"
-        },
-        "hero": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Lanjutan..",
-              "weight": "bold",
-              "decoration": "none",
-              "offsetBottom": "none",
-              "align": "center",
-              "margin": "sm",
-              "size": "xl",
-              "offsetTop": "md"
-            },
-            {
-              "type": "separator",
-              "margin": "md",
-              "color": "#00000000"
-            }
-          ],
-          "margin": "none",
-          "spacing": "none",
-          "borderWidth": "none",
-          "offsetStart": "none",
-          "offsetEnd": "none",
-          "paddingStart": "none",
-          "height": "38px"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "jika #include dan using namespace std;",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "terasa susah untuk dipahami, ingat saja",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "keduanya sebagai hal yang (hampir) se-",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "lalu ada dalam code C++.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "separator",
-              "color": "#00000000",
-              "margin": "md"
-            },
-            {
-              "type": "text",
-              "text": "dibawah return terdapat \"//ini komentar\".",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "hal tersebut merupakan comment. maka,",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "kalimat setelah \"//\" tidak akan di run.",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "separator",
-              "color": "#00000000",
-              "margin": "md"
-            },
-            {
-              "type": "text",
-              "text": "untuk memahami lebih lanjut, tentang s-",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "text": "truktur C++, kalian dapat menyimak vid",
-              "adjustMode": "shrink-to-fit",
-              "margin": "xs",
-              "size": "sm"
-            },
-            {
-              "type": "text",
-              "text": "pada tombol dibawah.",
-              "adjustMode": "shrink-to-fit",
-              "margin": "xs",
-              "size": "sm"
-            },
-            {
-              "type": "text",
-              "text": "*cukup tonton hingga menit 06:33",
-              "size": "xxs",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit",
-              "color": "#00000070",
-              "offsetStart": "md"
-            }
-          ]
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Video struktur C++",
-                "uri": "https://youtu.be/VMT7Felu1MI?start=88&end=392"
-              },
-              "style": "primary",
-              "color": "#014f86"
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "header": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Hello World",
-              "align": "center",
-              "size": "xl",
-              "weight": "bold",
-              "color": "#ffffff",
-              "margin": "none",
-              "offsetTop": "none"
-            }
-          ],
-          "backgroundColor": "#004e89",
-          "margin": "none",
-          "spacing": "md",
-          "offsetTop": "none",
-          "borderWidth": "none",
-          "paddingAll": "none",
-          "paddingTop": "lg",
-          "paddingBottom": "lg"
-        },
-        "hero": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Next.. Materi 4",
-              "weight": "bold",
-              "decoration": "none",
-              "offsetBottom": "none",
-              "align": "center",
-              "margin": "sm",
-              "size": "xl",
-              "offsetTop": "md"
-            },
-            {
-              "type": "separator",
-              "margin": "md",
-              "color": "#00000000"
-            }
-          ],
-          "margin": "none",
-          "spacing": "none",
-          "borderWidth": "none",
-          "offsetStart": "none",
-          "offsetEnd": "none",
-          "paddingStart": "none",
-          "height": "38px"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Di materi ke 4 kita akan mempelajari ",
-              "size": "sm",
-              "margin": "xs",
-              "adjustMode": "shrink-to-fit"
-            },
-            {
-              "type": "text",
-              "adjustMode": "shrink-to-fit",
-              "margin": "xs",
-              "size": "sm",
-              "text": "materi tentang tipe data pada C++."
-            },
-            {
-              "type": "separator",
-              "margin": "xxl",
-              "color": "#00000000"
-            },
-            {
-              "type": "text",
-              "text": "Materi ke 4 dapat diakses melalui menu",
-              "adjustMode": "shrink-to-fit",
-              "margin": "xs",
-              "size": "sm"
-            },
-            {
-              "type": "text",
-              "text": "materi.",
-              "adjustMode": "shrink-to-fit",
-              "margin": "xs",
-              "size": "sm"
-            }
-          ],
-          "offsetBottom": "none"
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "button",
-              "action": {
-                "type": "message",
-                "label": "Menu materi",
-                "text": "!learn"
-              },
-              "style": "primary",
-              "color": "#fca311"
-            }
-          ]
-        }
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Hello World!",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#004e89",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Bedah Struktur!",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetBottom": "md",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "offsetTop": "md"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "borderWidth": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "paddingStart": "none"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "#include <iostream> :",
+            "size": "sm",
+            "margin": "none",
+            "contents": [
+              {
+                "type": "span",
+                "text": "#include <iostream> ",
+                "weight": "bold"
+              },
+              {
+                "type": "span",
+                "text": ": File header digunakan untuk memanggil fungsi-fungsi dari library (<iostream> dalam code ini)"
+              }
+            ],
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "#include <iostream> :",
+            "size": "sm",
+            "margin": "none",
+            "contents": [
+              {
+                "type": "span",
+                "text": "using namespace std; ",
+                "weight": "bold"
+              },
+              {
+                "type": "span",
+                "text": ": berarti kita kita dapat menggunakan nama objek dan variabel dari library standard."
+              }
+            ],
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "#include <iostream> :",
+            "size": "sm",
+            "margin": "none",
+            "contents": [
+              {
+                "type": "span",
+                "text": "int main() ",
+                "weight": "bold"
+              },
+              {
+                "type": "span",
+                "text": ": merupakan fungsi yang se-lalu ada di tiap code C++. ia akan menjalankan kode yang ada di antara { dan }."
+              }
+            ],
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "#include <iostream> :",
+            "size": "sm",
+            "margin": "none",
+            "contents": [
+              {
+                "type": "span",
+                "text": "cout<<\"isikata\"; ",
+                "weight": "bold"
+              },
+              {
+                "type": "span",
+                "text": ": merupakan perintah untuk meng-output kata yang terdapat setelah simbol \"<<\"."
+              }
+            ],
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "#include <iostream> :",
+            "size": "sm",
+            "margin": "none",
+            "contents": [
+              {
+                "type": "span",
+                "text": "return 0; ",
+                "weight": "bold"
+              },
+              {
+                "type": "span",
+                "text": ": mengakhiri fungsi \"main\" beberapa program mungkin tidak memakai return."
+              }
+            ],
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Hello World!",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#004e89",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Jangan Lupa!!!",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetBottom": "none",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "offsetTop": "md"
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#00000000"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "borderWidth": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "paddingStart": "none",
+        "height": "38px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "diakhir setiap baris perintah pada program C++.",
+            "size": "lg",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "weight": "bold",
+            "wrap": true
+          },
+          {
+            "type": "separator",
+            "margin": "xxl",
+            "color": "#00000000"
+          },
+          {
+            "type": "text",
+            "text": "Jangan lupa menambahkan simbol semicolon (;)",
+            "size": "lg",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "weight": "bold",
+            "wrap": true
+          }
+        ],
+        "offsetBottom": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": []
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Hello World!",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#004e89",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Lanjutan..",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetBottom": "none",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "offsetTop": "md"
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#00000000"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "borderWidth": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "paddingStart": "none",
+        "height": "38px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "jika #include dan using namespace std; terasa susah untuk dipahami, ingat saja keduanya sebagai hal yang (hampir) selalu ada dalam code C++.",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "separator",
+            "color": "#00000000",
+            "margin": "md"
+          },
+          {
+            "type": "text",
+            "text": "dibawah return terdapat \"//ini komentar\". hal tersebut merupakan comment. maka, kalimat setelah \"//\" tidak akan di run (selama dalam baris yang sama).",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "separator",
+            "color": "#00000000",
+            "margin": "md"
+          },
+          {
+            "type": "text",
+            "text": "untuk memahami lebih lanjut, tentang struktur C++, kalian dapat menyimak vid pada tombol dibawah.",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "*cukup tonton hingga menit 06:33",
+            "size": "xxs",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "color": "#00000070",
+            "offsetStart": "md"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Video struktur C++",
+              "uri": "https://youtu.be/VMT7Felu1MI?start=88&end=392"
+            },
+            "style": "primary",
+            "color": "#014f86"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Hello World",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff",
+            "margin": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#004e89",
+        "margin": "none",
+        "spacing": "md",
+        "offsetTop": "none",
+        "borderWidth": "none",
+        "paddingAll": "none",
+        "paddingTop": "lg",
+        "paddingBottom": "lg"
+      },
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Next.. Materi 4",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetBottom": "none",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "offsetTop": "md"
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#00000000"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "borderWidth": "none",
+        "offsetStart": "none",
+        "offsetEnd": "none",
+        "paddingStart": "none",
+        "height": "38px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Di materi ke 4 kita akan mempelajari materi tentang tipe data pada C++.",
+            "size": "sm",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
+          },
+          {
+            "type": "separator",
+            "margin": "xxl",
+            "color": "#00000000"
+          },
+          {
+            "type": "text",
+            "text": "Materi ke 4 dapat diakses melalui menu materi.",
+            "adjustMode": "shrink-to-fit",
+            "margin": "xs",
+            "size": "sm",
+            "wrap": true
+          }
+        ],
+        "offsetBottom": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu materi",
+              "text": "!learn"
+            },
+            "style": "primary",
+            "color": "#fca311"
+          }
+        ]
+      }
+    }
+  ]
+}
