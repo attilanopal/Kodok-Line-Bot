@@ -78,41 +78,10 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
         {   
             if ($event['type'] == 'message')
             {   
-                
                 if($event['message']['type'] == 'text')
                 {   
-                    if($event['source']['type']=='group' or $event['source']['type']=='room'){
-                        if(strtolower($event['message']['text'])=='!learn'or 
-                        strtolower($event['message']['text'])=='!menu'or 
-                        strtolower($event['message']['text'])=='!start'or
-                        strtolower($event['message']['text'])=='!quiz'or
-                        strtolower($event['message']['text'])=='!lc1'or
-                        strtolower($event['message']['text'])=='!lc2'or
-                        strtolower($event['message']['text'])=='!lc3'or
-                        strtolower($event['message']['text'])=='!lc4'
-
-                        ){
-                        $pesanGrup = new TextMessageBuilder('Perintah untuk belajar tidak dapat dilakukan pada grup/room. Jadi perintah yang dapat dilakukan hanya perintah dasar : ');
-                        $pesanGrup1 = new TextMessageBuilder('!myuserid,!mypic,!mystat');
-                        }else if(strtolower($event['message']['text'])=='!myuserid'){
-                            $multiMessageBuilder = new MultiMessageBuilder();
-                            $stickerMessageBuilder= new StickerMessageBuilder(1,117);
-                            $textMessageBuilder = new TextMessageBuilder('Id kamu : ');
-                            $textMessageUserId = new TextMessageBuilder($event['source']['userId']);
-                            $multiMessageBuilder->add($textMessageBuilder);
-                            $multiMessageBuilder->add($textMessageUserId);
-                            $result = $bot->replyMessage($event['replyToken'], $multiMessageBuilder);
-                        }else if(strtolower($event['message']['text'])=='!mypic'){
-                            $userId=$event['source']['userId'];
-                            $profile=$getprofile->getJSONDecodedBody();
-                            $fotprof = new ImageMessageBuilder($profile['pictureUrl'],$profile['pictureUrl']);
-                            $result=$bot->replyMessage($event['replyToken'],$fotprof);
-                        }else if(strtolower($event['message']['text'])=='!mystat'){
-                            $userId=$event['source']['userId'];
-                            $profile=$getprofile->getJSONDecodedBody();
-                            $statusMessage = new TextMessageBuilder($profile['statusMessage']);
-                            $result=$bot->replyMessage($event['replyToken'],$statusMessage);
-                        }
+                    if($event['source']['type']=='group'or $event['source']['type']=='room'){
+                        $result = $bot->replyText($event['replyToken'],'Bot tidak dapat berjalan di groupchat!');
                     }else{
                     if(strtolower($event['message']['text']) == '!myuserid'){ // memberi userid
                     $multiMessageBuilder = new MultiMessageBuilder();
