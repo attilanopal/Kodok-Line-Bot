@@ -73,37 +73,21 @@
               },
               {
                 "type": "span",
-                "text": "bahasa Pemrograman kom-",
+                "text": "bahasa Pemrograman komputer",
                 "decoration": "underline",
                 "size": "sm"
-              }
-            ],
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "Pemrograman komputer yang merupakan",
-            "size": "sm",
-            "margin": "none",
-            "contents": [
-              {
-                "type": "span",
-                "text": "puter",
-                "decoration": "underline"
               },
               {
                 "type": "span",
                 "text": " yang merupakan perluasan dari "
+              },
+              {
+                "type": "span",
+                "text": "bahasa pemrograman C."
               }
             ],
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "bahasa pemrograman C.",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
           },
           {
             "type": "separator",
@@ -112,17 +96,11 @@
           },
           {
             "type": "text",
-            "text": "Bahasa C++ dikembangkan oleh Bjarne",
+            "text": "Bahasa C++ dikembangkan oleh Bjarne Stroustrup. C++ lahir pada tahun 1980an",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "Stroustrup. c++ lahir pada tahun 1980an",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
           }
         ]
       }
@@ -200,17 +178,11 @@
           },
           {
             "type": "text",
-            "text": "- Code nya bersifat fleksibel di semua ",
+            "text": "- Code nya bersifat fleksibel di semua jenis komputer",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "jenis komputer",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
           },
           {
             "type": "separator",
@@ -222,7 +194,8 @@
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit",
-            "text": "- Proses execute programnya lebih cepat"
+            "text": "- Proses execute programnya lebih cepat",
+            "wrap": true
           },
           {
             "type": "separator",
@@ -234,7 +207,8 @@
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit",
-            "text": "- Hanya memiliki sedikit kata-kata kunci"
+            "text": "- Hanya memiliki sedikit kata-kata kunci",
+            "wrap": true
           },
           {
             "type": "separator",
@@ -245,8 +219,8 @@
             "type": "text",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit",
-            "text": "- Memiliki dukungan pustaka yang banyak"
+            "text": "- Memiliki dukungan pustaka yang banyak",
+            "wrap": true
           }
         ]
       }
@@ -312,31 +286,11 @@
         "contents": [
           {
             "type": "text",
-            "text": "Untuk memahami materi ini lebih lanjut,",
+            "text": "Untuk memahami materi ini lebih lanjut, sangat disarankan untuk melihat materi pada video yang tercantum pada tombol di bawah ini",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "sangat disarankan untuk melihat materi",
             "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "pada video yang tercantum pada tombol",
-            "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "di bawah ini",
-            "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
+            "wrap": true
           }
         ]
       },
@@ -418,17 +372,10 @@
         "contents": [
           {
             "type": "text",
-            "text": "Materi ke 2 berisi persiapan sebelum kita",
+            "text": "Materi ke 2 berisi persiapan sebelum kita dapat mulai ngoding C++.",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "dapat mulai ngoding C++.",
-            "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
+            "wrap": true
           },
           {
             "type": "separator",
@@ -437,17 +384,11 @@
           },
           {
             "type": "text",
-            "text": "Materi ke 2 dapat diakses melalui menu",
+            "text": "Materi ke 2 dapat diakses melalui menu materi.",
             "adjustMode": "shrink-to-fit",
             "margin": "xs",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "materi.",
-            "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
+            "size": "sm",
+            "wrap": true
           }
         ]
       },

@@ -62,38 +62,11 @@
         "contents": [
           {
             "type": "text",
-            "text": "Integrated Development Environment :",
+            "text": "Integrated Development Environment : program berfungsi sebagai lingkungan pengembangan aplikasi atau program yang punya beberapa fasilitas yang dibutuhkan dalam membuat program.",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "program berfungsi sebagai lingkungan ",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "pengembangan aplikasi atau program ",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "yang punya beberapa fasilitas yang di-",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "butuhkan dalam membuat program.",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
           },
           {
             "type": "separator",
@@ -102,24 +75,11 @@
           },
           {
             "type": "text",
-            "text": "Jadi intinya, IDE adalah program yang",
+            "text": "Jadi intinya, IDE adalah program yang kita gunakan untuk membuat program dari bahasa C++.",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "kita gunakan untuk membuat program",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
-            "text": "dari bahasa C++.",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
           }
         ]
       }
@@ -221,14 +181,8 @@
             "size": "sm",
             "margin": "xs",
             "adjustMode": "shrink-to-fit",
-            "text": "Apabila anda tidak ingin install IDE,"
-          },
-          {
-            "type": "text",
-            "size": "sm",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit",
-            "text": "anda dapat menggunakan online IDE :"
+            "text": "Apabila anda tidak ingin install IDE, anda dapat menggunakan online IDE :",
+            "wrap": true
           },
           {
             "type": "text",
@@ -308,31 +262,19 @@
         "contents": [
           {
             "type": "text",
-            "text": "Untuk cara instalasi IDE, kami cantumkan",
+            "text": "Untuk cara instalasi IDE, kami cantumkan link instalasi vscode untuk C++. ",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+            "adjustMode": "shrink-to-fit",
+            "wrap": true
           },
           {
             "type": "text",
-            "text": "link instalasi vscode untuk C++.",
-            "adjustMode": "shrink-to-fit",
+            "text": "Dicantumkan juga link menuju online IDE. jika anda tidak ingin menginstall IDE",
+            "size": "sm",
             "margin": "xs",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "Selain itu, dicantumkan juga link menuju",
             "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "online IDE ",
-            "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
+            "wrap": true
           }
         ]
       },
@@ -448,17 +390,11 @@
         "contents": [
           {
             "type": "text",
-            "text": "Di materi ke 3 kita akan mulai ngoding",
+            "text": "Di materi ke 3 kita akan mulai ngoding dari dasar dulu",
             "size": "sm",
             "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "text",
             "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm",
-            "text": "dari dasar dulu"
+            "wrap": true
           },
           {
             "type": "separator",
@@ -467,17 +403,11 @@
           },
           {
             "type": "text",
-            "text": "Materi ke 3 dapat diakses melalui menu",
+            "text": "Materi ke 3 dapat diakses melalui menu materi.",
             "adjustMode": "shrink-to-fit",
             "margin": "xs",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "materi.",
-            "adjustMode": "shrink-to-fit",
-            "margin": "xs",
-            "size": "sm"
+            "size": "sm",
+            "wrap": true
           }
         ],
         "offsetBottom": "none"
