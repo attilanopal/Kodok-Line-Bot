@@ -154,6 +154,11 @@
             "margin": "sm",
             "size": "xl",
             "offsetTop": "md"
+          },
+          {
+            "type": "separator",
+            "color": "#00000000",
+            "margin": "md"
           }
         ],
         "margin": "none",
@@ -393,13 +398,13 @@
             "decoration": "none",
             "offsetBottom": "none",
             "align": "center",
-            "margin": "sm",
+            "margin": "md",
             "size": "xl",
             "offsetTop": "md"
           },
           {
             "type": "separator",
-            "margin": "md",
+            "margin": "lg",
             "color": "#00000000"
           }
         ],
