@@ -1,0 +1,113 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "baseline",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Uh Oh!",
+          "size": "xl",
+          "weight": "bold",
+          "margin": "none",
+          "color": "#ffffff",
+          "style": "normal",
+          "decoration": "none",
+          "align": "center",
+          "wrap": true,
+          "offsetStart": "0px",
+          "offsetEnd": "0px",
+          "offsetBottom": "6px",
+          "position": "relative",
+          "gravity": "center",
+          "offsetTop": "xs"
+        }
+      ],
+      "margin": "sm",
+      "spacing": "none",
+      "borderWidth": "none",
+      "cornerRadius": "none",
+      "offsetTop": "none",
+      "offsetBottom": "none",
+      "offsetStart": "none",
+      "offsetEnd": "none",
+      "paddingAll": "md",
+      "paddingTop": "md",
+      "paddingBottom": "md",
+      "paddingStart": "md",
+      "paddingEnd": "md",
+      "backgroundColor": "#d62828"
+    },
+    "hero": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://image.flaticon.com/icons/png/512/63/63436.png",
+          "margin": "none",
+          "offsetTop": "none",
+          "offsetBottom": "none",
+          "offsetStart": "none",
+          "offsetEnd": "none",
+          "animated": false,
+          "size": "sm",
+          "aspectMode": "cover",
+          "aspectRatio": "1:1"
+        },
+        {
+          "type": "text",
+          "text": "Command Tidak Ditemukan!",
+          "offsetStart": "none",
+          "align": "center",
+          "weight": "bold",
+          "offsetTop": "xs",
+          "margin": "none"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Tampaknya command yang anda kirim, tidak terdaftar dalam daftar command kami.",
+          "wrap": true
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "message",
+            "label": "Commands",
+            "text": "!commands"
+          },
+          "style": "primary",
+          "color": "#000000"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "message",
+            "label": "Menu Utama",
+            "text": "!menu"
+          },
+          "style": "secondary",
+          "margin": "md"
+        },
+        {
+          "type": "separator",
+          "margin": "md",
+          "color": "#ffffff00"
+        }
+      ],
+      "paddingTop": "none",
+      "offsetTop": "md"
+    }
+  }

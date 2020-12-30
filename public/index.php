@@ -126,7 +126,7 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                             'messages'   => [
                                 [
                                     'type'     => 'flex',
-                                    'altText'  => '[Materi C++]',
+                                    'altText'  => '[Daftar Materi C++]',
                                     'contents' => json_decode($flexTemplate)
                                 ]
                             ],
@@ -138,7 +138,7 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                             'messages'   => [
                                 [
                                     'type'     => 'flex',
-                                    'altText'  => '[Materi C++]',
+                                    'altText'  => '[Materi 1 C++]',
                                     'contents' => json_decode($flexTemplate)
                                 ]
                             ],
@@ -150,7 +150,7 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                             'messages'   => [
                                 [
                                     'type'     => 'flex',
-                                    'altText'  => '[Materi C++]',
+                                    'altText'  => '[Materi 2 C++]',
                                     'contents' => json_decode($flexTemplate)
                                 ]
                             ],
@@ -162,18 +162,23 @@ Dalam bot ini disediakan materi materi yang dapat dipelajari, kemudian juga terd
                             'messages'   => [
                                 [
                                     'type'     => 'flex',
-                                    'altText'  => '[Materi C++]',
+                                    'altText'  => '[Materi 3 C++]',
                                     'contents' => json_decode($flexTemplate)
                                 ]
                             ],
                         ]);
                     }else{ // input bukan command
-                        $noCommand = new TextMessageBuilder('Maaf, bot tidak memahami perintah yang anda berikan. Pastikan penulisan perintah sudah benar.');
-                        $commandSuggest = new TextMessageBuilder('Untuk mengecek list perintah silahkan gunakan perintah "!commands"');
-                        $multiNoCommand = new MultiMessageBuilder();
-                        $multiNoCommand->add($noCommand);
-                        $multiNoCommand->add($commandSuggest);
-                        $result = $bot->replyMessage($event['replyToken'],$multiNoCommand);
+                        $flexTemplate = file_get_contents("../flex_nocmd.json"); // flex message
+                        $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
+                            'replyToken' => $event['replyToken'],
+                            'messages'   => [
+                                [
+                                    'type'     => 'flex',
+                                    'altText'  => '[Command Salah]',
+                                    'contents' => json_decode($flexTemplate)
+                                ]
+                            ],
+                        ]);
                     }
                 }
                 }//Content api
