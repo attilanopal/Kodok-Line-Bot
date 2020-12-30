@@ -398,13 +398,13 @@
             "decoration": "none",
             "offsetBottom": "none",
             "align": "center",
-            "margin": "md",
+            "margin": "sm",
             "size": "xl",
             "offsetTop": "md"
           },
           {
             "type": "separator",
-            "margin": "lg",
+            "margin": "md",
             "color": "#00000000"
           }
         ],
